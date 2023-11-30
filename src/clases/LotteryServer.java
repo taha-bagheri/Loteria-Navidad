@@ -14,7 +14,7 @@ public class LotteryServer {
             ServerSocket serverSocket = new ServerSocket(12345); // Puerto de conexión
 
             System.out.println("Servidor esperando conexiones...");
-
+ 
             while (true) {
                 Socket clientSocket = serverSocket.accept(); // Espera a que un cliente se conecte
                 System.out.println("Cliente conectado desde " + clientSocket.getInetAddress());
